@@ -1,18 +1,19 @@
 import Minimalist from '../minimalist';
-import component from './components/batata';
+import outroComponente from './components/batata';
 
 new Minimalist({
   $el: '#app',
   $component: {
     template: `
-      {{ batata }}
-      @batata
+      <h1>{{ batata }} {{ alface }}</h1>
+      @outroComponente
     `,
     data: {
       batata: 'Daniel',
+      alface: 'Bonifacio',
     },
     components: {
-      'batata': component
+      outroComponente,
     },
   }
 }).initialize();
