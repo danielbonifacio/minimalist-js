@@ -8,7 +8,7 @@ const render = (component) => {
     }
   );
 
-  Object.keys(component.components).map(
+  component.components && Object.keys(component.components).map(
     ic => {
       component.template = component.template.replace(
         `@${ic}`,
