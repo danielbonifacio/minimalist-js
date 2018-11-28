@@ -2,9 +2,11 @@ import limao from './limao';
 
 export default {
   template: `
-    <h1>{{ title }} Component</h1>
-    <p>Sou um componente de batata</p>
-    @limao
+    <div class="component">
+      <h1>{{ title }} Component</h1>
+      <p>Sou um componente de batata</p>
+      @limao
+    </div>
   `,
   data: {
     title: 'Batata', 
