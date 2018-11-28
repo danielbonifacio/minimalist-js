@@ -28,7 +28,7 @@ class Minimalist {
   }
 
   initialize() {
-    document.write(render(this.$component))
+    document.querySelectorAll(this.$el)[0].innerHTML = render(this.$component);
   }
 }
 
